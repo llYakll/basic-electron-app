@@ -15,6 +15,9 @@ const copyFiles = () => {
 
     fs.mkdirSync(path.dirname(destination), { recursive: true });
     fs.copyFileSync(source, destination);
+
+    // Log the source and destination of each copied file (relative paths)
+    console.log(`Copied ${file.source} to ${file.destination}`);
   });
 };
 
