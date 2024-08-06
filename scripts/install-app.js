@@ -51,7 +51,7 @@ const runSetup = async () => {
     await executeCommand('npm run make', 'Packaging the Electron application');
 
     // Locate the .exe file in the out/make/squirrel.windows/x64 directory
-    const exeDir = path.join(__dirname, 'out', 'make', 'squirrel.windows', 'x64');
+    const exeDir = path.join(__dirname, '../out/make/squirrel.windows/x64');
     const exeFile = fs.readdirSync(exeDir).find(file => file.endsWith('.exe'));
     if (!exeFile) {
       throw new Error('Executable setup file not found.');
