@@ -7,7 +7,8 @@
       "start": "npm run compile && electron ./dist/main/index.js",
       "package": "npm run compile && electron-forge package",
       "make": "npm run compile && electron-forge make",
-      "lint": "echo \"No linting configured\""
+      "lint": "echo \"No linting configured\"",
+      "install-app": "node install-app.js"
     },
     "keywords": [
       "react",
